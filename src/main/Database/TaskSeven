@@ -1,0 +1,6 @@
+-- Сколько сотрудников которые работают в одном и том же отделе и получают
+--одинаковую зарплату?
+
+select salary,departament_id,count(*) as count_employees from employees
+group by salary,  departament_id
+having count(*)>1;

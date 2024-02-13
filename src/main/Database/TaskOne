@@ -1,0 +1,5 @@
+--Получить список всех сотрудников из 50го отдела(department_id) c зарплатой(salary)
+-- больше 4000
+
+SELECT employee_id, salary, departament_id from employees
+where departament_id = 50 and salary > 4000;

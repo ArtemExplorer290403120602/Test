@@ -1,0 +1,4 @@
+--Получить список всех сотрудников у которых последння буква в имении равна 'a'
+
+SELECT employee_id,first_name from employees
+where first_name like '%a'

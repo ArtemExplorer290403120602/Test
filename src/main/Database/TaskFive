@@ -1,0 +1,10 @@
+--Получить список всех сотрудников заменив в значении PHONE_NUMBER все
+--'.' на '-'
+
+select employee_id,first_name,last_name,email, replace(phone_number,'.','-') as phone_number_test
+from employees;
+
+select * from employees;
+
+insert into employees(employee_id, first_name, last_name, email, phone_number, hire_date, salary, commission_pct, departament_id)
+values (14,'TEST','TEST','TEST','+375.29.689.84.07','2020-07-25',9000,0.40,80);

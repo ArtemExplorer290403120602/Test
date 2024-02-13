@@ -1,0 +1,5 @@
+--Получить список всех сотрудников из 50го и из 80го отдела (department_id) у
+--которых есть бонус (значение в колонке commission_pct не пустое)
+
+select * from employees
+where departament_id =50 and departament_id=80 and commission_pct IS NOT NULL

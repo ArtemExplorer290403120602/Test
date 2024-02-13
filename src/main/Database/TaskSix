@@ -1,0 +1,8 @@
+--Получить список сотрудников с самым длинным именем.
+
+select distinct first_name from employees
+order by length(first_name) desc limit 1;
+--TODO ЗДЕСЬ У МЕНЯ ВОПРОС , ОШИБКА
+
+select employee_id, first_name,last_name from employees
+order by length(first_name) desc limit 1;
